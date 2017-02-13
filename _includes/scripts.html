@@ -1,0 +1,15 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<!-- trigger fadeInSlideUp CSS animation on scroll -->
+<script>
+	$(window).scroll(function() {
+		$('.image-animate').each(function(){
+      var imagePos = $(this).offset().top;
+
+  		var topOfWindow = $(window).scrollTop();
+  			if (imagePos < topOfWindow+600) {
+  				$(this).addClass("fadeInSlideUp");
+  			}
+		});
+	});
+</script>

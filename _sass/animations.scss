@@ -1,0 +1,64 @@
+/*
+==============================================
+NB: Animation CSS & jQuery modified from:
+CSS3 ANIMATION CHEAT SHEET by Justin Aguilar
+www.justinaguilar.com/animations/
+==============================================
+*/
+
+/*
+==============================================
+fadeInSlideUp
+==============================================
+*/
+
+.fadeInSlideUp{
+	animation-name: fadeInSlideUp;
+	-webkit-animation-name: fadeInSlideUp;
+
+  animation-duration: 0.8s;
+	-webkit-animation-duration: 0.8s;
+
+	animation-timing-function: ease-in-out;
+	-webkit-animation-timing-function: ease-in-out;
+
+	visibility: visible !important;
+}
+
+@keyframes fadeInSlideUp {
+	0% {
+		opacity: 0.0;
+    transform: translateY(1%);
+	}
+	25% {
+		opacity: 0.5;
+	}
+	50% {
+		opacity: 0.8;
+	}
+	75% {
+		opacity: 0.9;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes fadeInSlideUp {
+	0% {
+		opacity: 0.0;
+    transform: translateY(1%);
+	}
+	25% {
+		opacity: 0.5;
+	}
+	50% {
+		opacity: 0.8;
+	}
+	75% {
+		opacity: 0.9;
+	}
+	100% {
+		opacity: 1;
+	}
+}

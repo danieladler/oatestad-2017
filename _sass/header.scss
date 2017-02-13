@@ -1,0 +1,122 @@
+.header {
+  // TODO: replace with real background-image per below:
+  background-color: skyblue;
+
+  // background-image: url("");
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // background-attachment: fixed;
+
+  @include media($small-up) {
+    height: 250px;
+  }
+
+  @include media($medium-up) {
+  }
+
+
+  @include media($large-mobile-up) {
+    height: 600px;
+    // background-position: 0 -180px;
+  }
+}
+
+.header-content-wrapper {
+  @include media($small-up) {
+    padding-top: .625rem;
+  }
+
+  @include media($large-mobile-up) {
+    padding-top: 1.875rem;
+  }
+}
+
+.header-content {
+  text-align: center;
+  color: white;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: hsla(0, 0%, 77%, 0.75);
+  padding: 1.25rem 0;
+  border-radius: .25rem;
+
+  .names {
+    @include media($medium-up) {
+      padding-left: 2rem;
+    }
+  }
+
+  .page-heading-name,
+  .page-heading-amp {
+    @include media($small-up) {
+      display: block;
+    }
+
+    @include media($medium-up) {
+      display: inline-block;
+    }
+
+    margin-bottom: 0;
+  }
+
+  .page-heading-name {
+    font-family: sans-serif;
+
+    @include media($small-up) {
+      font-size: 2rem;
+      letter-spacing: .25rem;
+    }
+
+    @include media($large-mobile-up) {
+      font-size: 3rem;
+      letter-spacing: .5rem;
+    }
+
+    @include media($medium-up) {
+      font-size: 4rem;
+    }
+  }
+
+  .name-left {
+    @include media($large-mobile-up) {
+      padding-left: .5rem;
+    }
+  }
+
+  .name-right {
+    @include media($large-mobile-up) {
+      padding-left: .5rem;
+    }
+  }
+
+  .page-heading-amp {
+    font-family: serif;
+
+    @include media($small-up) {
+      font-size: 1.5rem;
+      padding: 0;
+    }
+
+    @include media($large-mobile-up) {
+      font-size: 2.625rem;
+      vertical-align: super;
+    }
+
+    @include media($medium-up) {
+      padding: 0 .625rem 0 1rem;
+      vertical-align: text-bottom;
+    }
+  }
+
+  .subheader {
+    font-family: serif;
+
+    @include media($small-up) {
+      font-size: 1.75rem;
+    }
+
+    @include media($large-mobile-up) {
+      font-size: 2rem;
+    }
+  }
+}

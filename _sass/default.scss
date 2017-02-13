@@ -1,0 +1,11 @@
+.main-content {
+  min-width: $small-screen;
+  display: inline-block;
+  width: 100%;
+
+  .header,
+  .index,
+  .footer {
+    @include span-columns(12);
+  }
+}
