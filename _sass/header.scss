@@ -1,5 +1,4 @@
 .header {
-  // TODO: replace with real background-image per below:
   background-color: skyblue;
   background-image: url("../images/750_8077.jpg");
   background-repeat: no-repeat;
@@ -16,7 +15,6 @@
 
   @include media($large-mobile-up) {
     height: 600px;
-    // background-position: 0 -180px;
   }
 }
 
@@ -39,12 +37,6 @@
   padding: 1.25rem 0;
   border-radius: .25rem;
 
-  .names {
-    @include media($medium-up) {
-      padding-left: 2rem;
-    }
-  }
-
   .page-heading-name,
   .page-heading-amp {
     @include media($small-up) {
@@ -59,7 +51,7 @@
   }
 
   .page-heading-name {
-    font-family: sans-serif;
+    font-family: "Poiret One", sans-serif;
 
     @include media($small-up) {
       font-size: 2rem;
@@ -78,7 +70,6 @@
 
   .name-left {
     @include media($large-mobile-up) {
-      padding-left: .5rem;
     }
   }
 
@@ -89,7 +80,7 @@
   }
 
   .page-heading-amp {
-    font-family: serif;
+    font-family: 'Playball', serif;
 
     @include media($small-up) {
       font-size: 1.5rem;
@@ -108,7 +99,7 @@
   }
 
   .subheader {
-    font-family: serif;
+    font-family: "Poiret One", sans-serif;
 
     @include media($small-up) {
       font-size: 1.75rem;
