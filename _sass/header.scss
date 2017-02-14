@@ -1,11 +1,10 @@
 .header {
   // TODO: replace with real background-image per below:
   background-color: skyblue;
-
-  // background-image: url("");
-  // background-repeat: no-repeat;
-  // background-size: cover;
-  // background-attachment: fixed;
+  background-image: url("../images/750_8077.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 
   @include media($small-up) {
     height: 250px;
