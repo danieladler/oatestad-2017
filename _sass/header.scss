@@ -1,6 +1,6 @@
 .header {
   background-color: skyblue;
-  background-image: url("../images/750_8077.jpg");
+  background-image: url("https://s3-us-west-2.amazonaws.com/lauren-steve/750_8077.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -11,7 +11,6 @@
 
   @include media($medium-up) {
   }
-
 
   @include media($large-mobile-up) {
     height: 600px;
